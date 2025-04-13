@@ -21,7 +21,8 @@ from . import views
 urlpatterns = [
     
     
-    path('',views.printf ,name='printf'),
+    path('',views.all_chai ,name='all_chai'),
+    path('<int:chai_id>/',views.desc ,name='detail'),
     
     
 ]
